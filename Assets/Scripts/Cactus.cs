@@ -23,7 +23,7 @@ public class Cactus : MonoBehaviour
         _bgMgr = FindObjectOfType<BackGroundManager>();
         _scMgr = FindObjectOfType<ScoreManager>();
 
-        _speedPosX = _cfgMgr.getCactusSpeedPosx();
+        _speedPosX = _cfgMgr.getCactusSpeedPosx() * Time.deltaTime;
         _lastPosX = _cfgMgr.getCactusLastPosx();
 
         // 최종 X좌표 수정

@@ -21,7 +21,7 @@ public class Ground : MonoBehaviour
         _cfgMgr = FindObjectOfType<ConfigManager>();
         _bgMgr  = FindObjectOfType<BackGroundManager>();
         
-        _speedPosX = _cfgMgr.getGroundSpeedPosx();
+        _speedPosX = _cfgMgr.getGroundSpeedPosx() * Time.deltaTime;
         _lastPosX  = _cfgMgr.getSkyGroundLastPosX();
     }
 
@@ -32,6 +32,7 @@ public class Ground : MonoBehaviour
         {
             // 배경 X축 이동
             transform.Translate(-_speedPosX, 0, 0);   // x축으로만 좌측이동
+
 
             int positionX = (int)transform.position.x;
             // Debug.Log(positionX + " == " + _bgImgFirstPosX + " - " + _bgImgWidth);

@@ -53,12 +53,12 @@ public class NonePlayerManager : MonoBehaviour
             if (isFlappyFlyToRight)
             {
                 tfm.localScale = new Vector3(1, vecScale.y, vecScale.z);
-                tfm.Translate(_cfgMgr.getGroundSpeedPosx(), 0, 0);
+                tfm.Translate(_cfgMgr.getGroundSpeedPosx() * Time.deltaTime, 0, 0);
             }
             else
             {
                 tfm.localScale = new Vector3(-1, vecScale.y, vecScale.z);
-                tfm.Translate(-_cfgMgr.getGroundSpeedPosx(), 0, 0);
+                tfm.Translate(-_cfgMgr.getGroundSpeedPosx() * Time.deltaTime, 0, 0);
             }
         }
     }

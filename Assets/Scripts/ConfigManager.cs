@@ -23,14 +23,14 @@ public class ConfigManager : MonoBehaviour
     private const int _skyGroundLastPosX = -6;           // Sky, Ground배경 이미지의 최종 X좌표
     private const int _cloudRockLastPosX = -3;           // Cloud, Rock배경 이미지의 최종 X좌표
 
-    private const float _skySpeedPosx    = 0.005f;       // Sky X좌표 이동 스피드
-    private const float _cloudSpeedPosx  = 0.002f;       // Cloud X좌표 이동 스피드
-    private const float _rockSpeedPosx   = 0.001f;       // Rock X좌표 이동 스피드
-    private const float _groundSpeedPosx = 0.01f;        // Ground X좌표 이동 스피드
+    private const float _skySpeedPosx    = 0.5f;       // Sky X좌표 이동 스피드
+    private const float _cloudSpeedPosx  = 0.2f;       // Cloud X좌표 이동 스피드
+    private const float _rockSpeedPosx   = 0.1f;       // Rock X좌표 이동 스피드
+    private const float _groundSpeedPosx = 1.0f;        // Ground X좌표 이동 스피드
 
     // 장애물(선인장)
     private const int _cactusLastPosX = -5;              // Cactus 최종 X좌표
-    private const float _cactusSpeedPosx = 0.01f;        // Cactus X좌표 이동 스피드
+    private const float _cactusSpeedPosx = 0.5f;        // Cactus X좌표 이동 스피드
 
     private const int _basicObtainScore = 1;             // 기본획득점수
     private const float _invokeBasicTime = 1.0f;         // Invoke함수 기본실행 시간
