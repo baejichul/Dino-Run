@@ -21,13 +21,13 @@ public class Ground : MonoBehaviour
         _cfgMgr = FindObjectOfType<ConfigManager>();
         _bgMgr  = FindObjectOfType<BackGroundManager>();
         
-        _speedPosX = _cfgMgr.getGroundSpeedPosx() * Time.deltaTime;
+        _speedPosX = _cfgMgr.getGroundSpeedPosx() * Time.fixedDeltaTime;
         _lastPosX  = _cfgMgr.getSkyGroundLastPosX();
     }
 
     // Update is called once per frame
     void Update()
-    {   
+    {
         if (_playUI.activeSelf == true)
         {
             // 배경 X축 이동

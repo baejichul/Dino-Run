@@ -21,7 +21,7 @@ public class Cloud : MonoBehaviour
         _cfgMgr = FindObjectOfType<ConfigManager>();
         _bgMgr = FindObjectOfType<BackGroundManager>();
 
-        _speedPosX = _cfgMgr.getCloudSpeedPosx() * Time.deltaTime;
+        _speedPosX = _cfgMgr.getCloudSpeedPosx() * Time.fixedDeltaTime;
         _lastPosX = _cfgMgr.getCloudRockLastPosX();
 
         // 최종 X좌표 수정

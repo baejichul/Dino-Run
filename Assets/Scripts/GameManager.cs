@@ -82,11 +82,14 @@ public class GameManager : MonoBehaviour
 
     // 게임 다시 시작
     public void RePlayGame()
-    {   
-        _sndMgr.play("Button");
-        SceneManager.LoadScene("MainScene");
+    {
+        // _sndMgr.play("Button");
+        SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
+        // InitGame();
+        
+
     }
-    
+
     // 게임 시작버튼
     public void OnClick_BtnStart()
     {

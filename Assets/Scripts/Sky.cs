@@ -20,7 +20,7 @@ public class Sky : MonoBehaviour
         _cfgMgr = FindObjectOfType<ConfigManager>();
         _bgMgr = FindObjectOfType<BackGroundManager>();
 
-        _speedPosX = _cfgMgr.getSkySpeedPosx() * Time.deltaTime;
+        _speedPosX = _cfgMgr.getSkySpeedPosx() * Time.fixedDeltaTime;
         _lastPosX = _cfgMgr.getSkyGroundLastPosX();
     }
 
